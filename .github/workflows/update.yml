@@ -47,6 +47,7 @@ jobs:
         
       - name: Merge the remote template
         run: git merge template/main --allow-unrelated-histories
+        continue-on-error: true
         
       - name: Show base yaml file
         run: cat docs/index.yaml
