@@ -37,14 +37,40 @@ jobs:
       - name: Fetch main branch of the twinbase repo
         run: git fetch template
         
+      - name: Show base yaml file
+        run: cat docs/index.yaml
+        
       - name: Check git status
         run: git status
         
       - name: Merge the remote template
-        run: git merge template/main
+        run: git merge template/main --allow-unrelated-histories
+        
+      - name: Show base yaml file
+        run: cat docs/index.yaml
+        
+      - name: Check git status
+        run: git status
+        
+      - name: Use files in the local repo
+        run: git checkout --ours .
+        
+      - name: Show base yaml file
+        run: cat docs/index.yaml
         
       - name: Check git status again
         run: git status
+        
+      - name: Add files to resolve merge conflict
+        run: git add -u
+        
+      - name: Commit files
+        run: git commit -m "Update Merge twinbase/twinbase"
+        
+      - name: Check git status
+        run: git status
+        
+      # Now push!
 
       # Runs a set of commands using the runners shell
       - name: Congratulate
