@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
+      - name: Check git version
+        run: git --version
+        
       - name: Check git status
         run: git status
 
@@ -33,6 +36,9 @@ jobs:
         
       - name: Fetch main branch of the twinbase repo
         run: git fetch template
+        
+      - name: Check git status
+        run: git status
         
       - name: Merge the remote template
         run: git merge template/main
