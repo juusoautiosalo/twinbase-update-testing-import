@@ -24,9 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        
-      - name: Check git version
-        run: git --version
+      
+      - name: Setup git user
+        run: |
+          git config --local user.email "57953088+juusoautiosalo@users.noreply.github.com"
+          git config --local user.name "twinbase-file-modifier-workflow[bot]"
         
       - name: Check git status
         run: git status
