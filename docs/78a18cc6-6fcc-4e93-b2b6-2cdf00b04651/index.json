@@ -1,0 +1,8 @@
+{
+    "dt-id": "https://dtid.org/78a18cc6-6fcc-4e93-b2b6-2cdf00b04651",
+    "hosting-iri": "https://juusoautiosalo.github.io/twinbase-update-testing-import/78a18cc6-6fcc-4e93-b2b6-2cdf00b04651",
+    "name": "Test twin",
+    "description": "Used for testing update mechanisms.",
+    "baseurl": "https://juusoautiosalo.github.io/twinbase-update-testing-import",
+    "edit": "https://github.com/juusoautiosalo/twinbase-update-testing-import/edit/main/docs/78a18cc6-6fcc-4e93-b2b6-2cdf00b04651/index.yaml"
+}
