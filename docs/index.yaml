@@ -3,4 +3,6 @@ owner:
   dt-id: http://d-t.fi/juuso
 repo_url: https://github.com/juusoautiosalo/twinbase-update-testing-import
 new_twin_url: https://github.com/juusoautiosalo/twinbase-update-testing-import/new/main?filename=docs/edit_this_with_backspace/index.yaml&value=Paste%20a%20DT%20document%20template%20here
-twins: []
+twins:
+- url: https://juusoautiosalo.github.io/twinbase-update-testing-import/78a18cc6-6fcc-4e93-b2b6-2cdf00b04651
+  name: Test twin
